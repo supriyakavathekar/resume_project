@@ -104,28 +104,27 @@ background-attachment: fixed;
 
 
 
-  .button { 
+   
+/* .button {  */
       border: none 2px;
     /* for giving border to button */
-     border-radius: 10px; 
+     /* border-radius: 10px;  */
     /* to change the shape . it appears in curve */
      /* border-color: black; */
      /* border-style: dotted; */
      /* background-color:yellow; */
-      padding: 10px;
+      /* padding: 10px; */
       color: black;
       width: 150px;
       letter-spacing: 1.5px;
-       /* visibility: hidden; */
-   
-}
+        /* visibility: hidden;  } */
+
 
 
 .navlist a {
     text-decoration: none;
 color: white;
 border-bottom: 2px solid white;
-
 }
 
 /* a : anchor tab . told the browser to take a which are in particular class. 
@@ -147,15 +146,21 @@ width: 700px ;
 /* .logo { */
     /* text-shadow: 2px 3px 4px coral; */
     /* you have to mention the pixel (3 times px) */
-    width: 100px;
-    margin: 0 auto;
+    /* width: 100px; */
+    /* margin: 0 auto; */
 /* container went into the center. we are not setting text . we are 
 putting image . very uesful for everything. to move the div , not
 the text. with text allignment we only move text and not container that is div.
-it has div  */
-}
+it has div } */
+
 
 p {
     padding-bottom: 10px;
 }
 
+.maincontent  {
+    height: 100%;
+    width: 100%;
+    margin: 15px;
+    border: 1px solid red;
+}
