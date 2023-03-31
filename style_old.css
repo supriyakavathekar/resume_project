@@ -1,17 +1,11 @@
 html{
     /* when we need to impact changes to the whole webpage add under html */
     font-family: ‘Karla’, sans-serif;
-    
+    background-color: rgb(146, 221, 238);
     /* for the smooth scroll behaviour throughgtout the page */
     scroll-behavior: smooth;
 }
 /* margin: 10px 15px 20px; three values for top bottom and rightleft of the margin*/
-
-body {
-    height: 100vh;
-    width: 100vw;
-}
-
 .header{
     background-color: rgb(18, 146, 243);
     position: fixed;
@@ -36,7 +30,7 @@ body {
     width: 150px;
     height: 100px;
     /* center alignment “0 auto” */
-    background-image: url("/assets/images/download.png");
+    background-image: url(/assets/images/download.png) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -57,14 +51,14 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 500px;
-   
-    background-image: url(/assets/images/laptop.jpg);
+    height: 10px;
+    background-image: url(“BG.“);
+    background-image: linear-gradient(rgba(218, 164, 164, 0.5),rgba(239, 205, 205, 0.5)),url(“./assets/images/BG.jpeg”);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     /* background-size: contain; */
-   
+    height: 600px;
     background-attachment: fixed;
     font-size: 30px;
 }
@@ -116,24 +110,35 @@ body {
 .maincontent{
     margin: 20px;
 }
-
 .contactswrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    border: 1px solid black;
-    height: 200px;
- 
     }
     .div1 { grid-area: 1 / 1 / 5 / 2; }
     .div2 { grid-area: 1 / 2 / 2 / 3; }
     .div3 { grid-area: 2 / 2 / 3 / 3; }
     .div4 { grid-area: 3 / 2 / 4 / 3; }
     .div5 { grid-area: 4 / 2 / 5 / 3; }
-
-
 footer{
     color: brown;
 }
+
+
+
+
+
+    /* a : anchor tab . told the browser to take a which are in particular class.   */
+/* eg <li class="navlist" ><a href="#contact">Contact</a></li>   */
+
+/* .logo { */
+/* text-shadow: 2px 3px 4px coral; */
+/* you have to mention the pixel (3 times px) */
+/* width: 100px; */
+/* margin: 0 auto; */
+/* container went into the center. we are not setting text . we are 
+putting image . very uesful for everything. to move the div , not
+the text. with text allignment we only move text and not container that is div.
+it has div } */
