@@ -150,7 +150,38 @@ p {
   margin-top: 10px;
 }
 
+.linkwrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.githubicon {
+  background-image: url("/assets/icons/git.svg.png");
+}
+
+.linkdinicon {
+  background-image: url("/assets/icons/linkdin.svg.png");
+}
+
+.callicon {
+  background-image: url("/assets/icons/call.svg.png");
+}
+
+.contactlink {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 footer {
   color: brown;
