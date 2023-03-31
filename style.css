@@ -1,139 +1,157 @@
-html{
-    /* when we need to impact changes to the whole webpage add under html */
-    font-family: ‘Karla’, sans-serif;
-    
-    /* for the smooth scroll behaviour throughgtout the page */
-    scroll-behavior: smooth;
+html {
+  /* when we need to impact changes to the whole webpage add under html */
+  font-family: ‘Karla’, sans-serif;
+
+  /* for the smooth scroll behaviour throughgtout the page */
+  scroll-behavior: smooth;
 }
 /* margin: 10px 15px 20px; three values for top bottom and rightleft of the margin*/
 
 body {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
-.header{
-    background-color: rgb(18, 146, 243);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    z-index: 100;
+.header {
+  background-color: rgb(18, 146, 243);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
 }
-.container{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.container a{
-    color: white;
+.container a {
+  color: white;
 }
 /* this will align the logo element in the centre even if its image or text */
-.logo{
-    width: 150px;
-    height: 100px;
-    /* center alignment “0 auto” */
-    background-image: url("/assets/images/download.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 30px;
+.logo {
+  width: 150px;
+  height: 100px;
+  /* center alignment “0 auto” */
+  background-image: url("/assets/images/download.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
 }
-.navwrapper{
-    display: flex;
-    flex-direction: row;
-    width: 600px;
-    justify-content: space-around;
+.navwrapper {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  justify-content: space-around;
 }
-.heroWrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 500px;
-   
-    background-image: url(/assets/images/laptop.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    /* background-size: contain; */
-   
-    background-attachment: fixed;
-    font-size: 30px;
+.heroWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+
+  background-image: url(/assets/images/laptop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-size: contain; */
+
+  background-attachment: fixed;
+  font-size: 30px;
 }
-.mainTitle{
-    font-weight: bolder;
-    color: dark rgb(6, 6, 71);
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+.mainTitle {
+  font-weight: bolder;
+  color: dark rgb(6, 6, 71);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.subTitle{
-    font-weight: 700;
-    color: rgb(6, 6, 71);
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+.subTitle {
+  font-weight: 700;
+  color: rgb(6, 6, 71);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.sectionheading{
-    font-weight: 600;
-    color: blue;
+.sectionheading {
+  font-weight: 600;
+  color: blue;
 }
- p{
-    padding: 20px;
- }
+p {
+  padding: 20px;
+}
 /* to remove the bullets from the unordered list */
 .navList {
-    list-style-type: none;
+  list-style-type: none;
 }
 /* this is to remove the underline from the link. we need to specify “a” tag inside the class navItem to be specific which link needs to be impacted  */
-.navItem a{
- text-decoration: none;
-/* text-decoration: dotted red 3px; */
+.navItem a {
+  text-decoration: none;
+  /* text-decoration: dotted red 3px; */
 }
 /* Add  border with radius to a button element*/
-.button{
-    /* border: solid 2px  red; */
-    border-radius: 5px;
-    /* border-style: none; */
-    border: none;
-    background-color: white;
-    padding: 20px;
-   letter-spacing: 2px;
-    align-items: center;
-    align-self: center;
-    margin: 0,auto;
-    display: block;
-    padding: 10px;
-    width: 150px;
-    /* visibility: hidden; */
+.button {
+  /* border: solid 2px  red; */
+  border-radius: 5px;
+  /* border-style: none; */
+  border: none;
+  background-color: white;
+  padding: 20px;
+  letter-spacing: 2px;
+  align-items: center;
+  align-self: center;
+  margin: 0, auto;
+  display: block;
+  padding: 10px;
+  width: 150px;
+  /* visibility: hidden; */
 }
-.maincontent{
-    margin: 20px;
+.maincontent {
+  margin: 20px;
 }
 
 .contactswrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    border: 1px solid black;
-    height: 200px;
- 
-    }
-    .div1 { grid-area: 1 / 1 / 5 / 2; }
-    .div2 { grid-area: 1 / 2 / 2 / 3; }
-    .div3 { grid-area: 2 / 2 / 3 / 3; }
-    .div4 { grid-area: 3 / 2 / 4 / 3; }
-    .div5 { grid-area: 4 / 2 / 5 / 3; }
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  border: 1px solid black;
+  height: 200px;
+}
+.div1 {
+  grid-area: 1 / 1 / 5 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div4 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.div5 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.photo {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
 
 
-footer{
-    color: brown;
+
+footer {
+  color: brown;
 }
